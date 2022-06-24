@@ -7,6 +7,7 @@ import Skills from "./containers/skills"
 import Resume from "./containers/resume"
 import Portfolio from "./containers/portfolio"
 import Contact from "./containers/contact"
+import './css/style.css'
 
 function App() {
   return (
