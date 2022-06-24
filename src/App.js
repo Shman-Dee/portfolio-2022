@@ -1,5 +1,6 @@
 import './App.css'
 import { Routes, Route } from 'react-router-dom'
+import './css/style.css'
 
 import Home from "./containers/home"
 import About from "./containers/about"
@@ -7,11 +8,13 @@ import Skills from "./containers/skills"
 import Resume from "./containers/resume"
 import Portfolio from "./containers/portfolio"
 import Contact from "./containers/contact"
-import './css/style.css'
+import Navbar from "./components/navbar"
+
 
 function App() {
   return (
     <div className="App">
+      <Navbar/>
       <Routes>
         <Route path="/" index element={<Home />} />
         <Route path="/about" index element={<About />} />
