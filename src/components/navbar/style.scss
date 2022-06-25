@@ -17,6 +17,13 @@
     height: 80px;
     padding: 0px 20px;
 
+    &__logo {
+      color: yellow;
+      cursor: pointer;
+      font-size: 2rem;
+      flex-grow: 1;
+    }
+
     &__menu {
       display: flex;
       list-style: none;
@@ -38,14 +45,54 @@
           width: 100%;
           background: yellow;
         }
+
+        &__links {
+          color: yellow;
+          text-decoration: none;
+          padding: 0.5rem 1rem;
+        }
+      }
+      &__item:last-child {
+        margin: 0px;
       }
     }
+  }
+}
 
-    &__logo {
-      color: yellow;
-      cursor: pointer;
-      font-size: 2rem;
-      flex-grow: 1;
+.nav-icon {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar__container__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: -110%;
+    opacity: 1;
+    transition: all 0.5s ease;
+
+    &.active {
+      background: #181818;
+      left: 0px;
+      opacity: 1;
+      z-index: 1;
+      transition: all 0.5s ease;
     }
+  }
+
+  .navbar__container__menu__item {
+    border-bottom: 1px solid #282828;
+    margin: 0px;
+    padding: 20px 0px
+  }
+
+  .nav-icon {
+    display: block;
+    cursor: pointer;
+    color: yellow;
   }
 }
