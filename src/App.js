@@ -1,5 +1,5 @@
 import './App.css'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useLocation } from 'react-router-dom'
 import './css/style.css'
 import Particles from 'react-tsparticles'
 import { loadFull } from 'tsparticles'
@@ -13,18 +13,24 @@ import Navbar from './components/navbar'
 import particlesConfig from './helpers/particlesConfig'
 
 function App() {
-
   const particlesInit = async (main) => {
     await loadFull(main)
   }
 
+  const location = useLocation()
+  const renderParticleJsIfCurrentPageIsHomePage = location.pathname === '/'
+  console.log(location)
+
   return (
     <div className="App">
-      <Particles
-        id="particles"
-        options={particlesConfig}
-        init={particlesInit}
-      />
+      {renderParticleJsIfCurrentPageIsHomePage && (
+        <Particles
+          id="particles"
+          options={particlesConfig}
+          init={particlesInit}
+        />
+      )}
+
       <Navbar />
       <Routes>
         <Route path="/" index element={<Home />} />
