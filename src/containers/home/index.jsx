@@ -1,8 +1,17 @@
 import React from 'react'
+import './style.scss'
 
 function Home() {
   return (
-    <div>Home</div>
+    <section className="home" id="home">
+      <div className="home__text-wrapper">
+        <h1>
+          Hello, I'm Andrew
+          <br />
+          Full Stack Developer.
+        </h1>
+      </div>
+    </section>
   )
 }
 

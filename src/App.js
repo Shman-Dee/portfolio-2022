@@ -1,15 +1,15 @@
-import './App.css'
+import './App.scss'
 import { Routes, Route, useLocation } from 'react-router-dom'
-import './css/style.css'
+import './css/style.scss'
 import Particles from 'react-tsparticles'
 import { loadFull } from 'tsparticles'
-import Home from './containers/home'
-import About from './containers/about'
-import Skills from './containers/skills'
-import Resume from './containers/resume'
-import Portfolio from './containers/portfolio'
-import Contact from './containers/contact'
-import Navbar from './components/navbar'
+import Home from './containers/Home'
+import About from './containers/About'
+import Skills from './containers/Skills'
+import Resume from './containers/Resume'
+import Portfolio from './containers/Portfolio'
+import Contact from './containers/Contact'
+import Navbar from './components/Navbar'
 import particlesConfig from './helpers/particlesConfig'
 
 function App() {
@@ -19,7 +19,6 @@ function App() {
 
   const location = useLocation()
   const renderParticleJsIfCurrentPageIsHomePage = location.pathname === '/'
-  console.log(location)
 
   return (
     <div className="App">
@@ -30,16 +29,20 @@ function App() {
           init={particlesInit}
         />
       )}
+      <div className="App__navbar-wrapper">
+        <Navbar />
+      </div>
 
-      <Navbar />
-      <Routes>
-        <Route path="/" index element={<Home />} />
-        <Route path="/about" index element={<About />} />
-        <Route path="/skills" index element={<Skills />} />
-        <Route path="/resume" index element={<Resume />} />
-        <Route path="/portfolio" index element={<Portfolio />} />
-        <Route path="/contact" index element={<Contact />} />
-      </Routes>
+      <div className="App__main-content-wrapper">
+        <Routes>
+          <Route path="/" index element={<Home />} />
+          <Route path="/about" index element={<About />} />
+          <Route path="/skills" index element={<Skills />} />
+          <Route path="/resume" index element={<Resume />} />
+          <Route path="/portfolio" index element={<Portfolio />} />
+          <Route path="/contact" index element={<Contact />} />
+        </Routes>
+      </div>
     </div>
   )
 }
