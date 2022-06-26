@@ -6,7 +6,7 @@ import { useState } from 'react'
 const colorsArray = [
   {
     id: 'yellow',
-    bgColor: '#ffdd40',
+    bgColor: '#E4DB03',
   },
   {
     id: 'red',
@@ -31,9 +31,11 @@ function Theme() {
     setToggle(false)
   }
 
+  console.log(theme)
+
   return (
     <div className={`theme-wrapper ${toggle ? 'active' : ''}`}>
-      <div className="them-wrapper__toggle-icon">
+      <div className="theme-wrapper__toggle-icon">
         <ImCog onClick={() => setToggle(!toggle)} size={40} />
       </div>
       <div className="theme-wrapper__menu">

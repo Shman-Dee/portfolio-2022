@@ -1,28 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
 
-:root {
 
-  --selected-theme-background-color: var (--yellow-theme-background-color);
-  --selected-theme-main-color: var (--yellow-theme-main-color);
-  --selected-theme-sub-text-color: var (--yellow-theme-sub-text-color);
-  --selected-theme-nav-background-color: var (--yellow-theme-nav-background-color);
-
-
-
-  --yellow-theme-background-color: #cca3a3;
-  --yellow-theme-main-color: #ffdd40;
-  --yellow-theme-sub-text-color: #ffffff;
-  --yellow-theme-nav-background-color: #181818;
-
-  --font-base : "Roboto Slab", serif;
-}
-
-*{
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Slab', serif;
 }
 
 html {
@@ -35,6 +20,6 @@ body {
   height: 100%;
 }
 
-#root{
+#root {
   height: 100%;
 }
