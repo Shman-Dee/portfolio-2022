@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 
   &__text-wrapper {
     display: flex;
@@ -21,6 +22,45 @@
       overflow: hidden;
       white-space: nowrap;
       animation: typingEffect 2.5s steps(30, end);
+    }
+  }
+
+  .contact-me {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+
+    &__buttons-wrapper {
+      display: flex;
+      gap: 10px;
+
+      button,
+      a {
+        cursor: pointer;
+        padding: 10px 70px;
+        font-size: 2rem;
+        background: transparent;
+        color: yellow;
+        border: 1.5px solid yellow;
+        border-radius: 4px;
+        font-weight: 500;
+        &:hover{
+          color: #000000;
+          background: yellow;
+        }
+      }
+    }
+
+    &__socials-wrapper {
+      display: flex;
+      gap: 10px;
+
+      svg{
+        color: yellow;
+        cursor: pointer;
+      }
     }
   }
 }
