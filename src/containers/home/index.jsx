@@ -1,5 +1,6 @@
 import React from 'react'
-import {FaLinkedin, FaGithub} from 'react-icons/fa'
+import { Animate } from 'react-simple-animate'
+import { FaLinkedin, FaGithub } from 'react-icons/fa'
 import './style.scss'
 
 function Home() {
@@ -12,16 +13,28 @@ function Home() {
           Full Stack Developer
         </h1>
       </div>
-      <div className="contact-me">
-        <div className="contact-me__buttons-wrapper">
-          <button>Hire Me</button>
-          <a>Download Resume</a>
+      <Animate
+        play={true}
+        duration={1.5}
+        delay={1.5}
+        start={{
+          transform: 'translateY(600px)',
+        }}
+        end={{
+          transform: 'translateX(0px)',
+        }}
+      >
+        <div className="contact-me">
+          <div className="contact-me__buttons-wrapper">
+            <button>Hire Me</button>
+            <a>Download Resume</a>
+          </div>
+          <div className="contact-me__socials-wrapper">
+            <FaLinkedin size={30} />
+            <FaGithub size={30} />
+          </div>
         </div>
-        <div className="contact-me__socials-wrapper">
-          <FaLinkedin size={30} />
-          <FaGithub size={30} />
-        </div>
-      </div>
+      </Animate>
     </section>
   )
 }
