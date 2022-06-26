@@ -18,7 +18,7 @@
     padding: 0px 20px;
 
     &__logo {
-      color: #E4DB03;
+      color: var(--selected-theme-main-color);
       cursor: pointer;
       font-size: 2rem;
       flex-grow: 1;
@@ -43,11 +43,11 @@
         }
         &:hover::after {
           width: 100%;
-          background: #E4DB03;
+          background: var(--selected-theme-main-color);
         }
 
         &__links {
-          color: #E4DB03;
+          color: var(--selected-theme-main-color);
           text-decoration: none;
           padding: 0.5rem 1rem;
         }
@@ -93,6 +93,6 @@
   .nav-icon {
     display: block;
     cursor: pointer;
-    color: #E4DB03;
+    color: var(--selected-theme-main-color);
   }
 }

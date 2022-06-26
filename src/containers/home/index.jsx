@@ -1,6 +1,6 @@
 import React from 'react'
 import { Animate } from 'react-simple-animate'
-import { FaLinkedin, FaGithub } from 'react-icons/fa'
+import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa'
 import './style.scss'
 
 function Home() {
@@ -27,11 +27,12 @@ function Home() {
         <div className="contact-me">
           <div className="contact-me__buttons-wrapper">
             <button>Hire Me</button>
-            <a>Download Resume</a>
+            <a href="http://google.com" >Download Resume</a>
           </div>
           <div className="contact-me__socials-wrapper">
-            <FaLinkedin size={30} />
-            <FaGithub size={30} />
+            <FaLinkedin size={32} />
+            <FaGithub size={32} />
+            <FaTwitter size={32} />
           </div>
         </div>
       </Animate>

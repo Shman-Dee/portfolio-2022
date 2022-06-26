@@ -1,7 +1,9 @@
 import React from 'react'
 import { ImCog } from 'react-icons/im'
 import './style.scss'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import setTheme from '../../helpers/theme'
+
 
 const colorsArray = [
   {
@@ -31,7 +33,9 @@ function Theme() {
     setToggle(false)
   }
 
-  console.log(theme)
+useEffect(() => {
+  setTheme(theme)
+},[theme])
 
   return (
     <div className={`theme-wrapper ${toggle ? 'active' : ''}`}>
