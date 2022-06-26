@@ -10,7 +10,7 @@ function Home() {
         <h1 className="title-text">
           Hello, I'm Andrew.
           <br />
-          Full Stack Developer
+          Utility Specialist
         </h1>
       </div>
       <Animate
