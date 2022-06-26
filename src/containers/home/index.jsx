@@ -5,7 +5,7 @@ function Home() {
   return (
     <section className="home" id="home">
       <div className="home__text-wrapper">
-        <h1>
+        <h1 className="title-text">
           Hello, I'm Andrew
           <br />
           Full Stack Developer.
