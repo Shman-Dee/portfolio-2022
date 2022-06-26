@@ -3,6 +3,7 @@ import { skillsData } from './utils'
 import PageHeaderContent from '../../components/PageHeaderContent'
 import { GiSkills } from 'react-icons/gi'
 import { Line } from 'rc-progress'
+import './style.scss'
 
 function Skills() {
   return (
