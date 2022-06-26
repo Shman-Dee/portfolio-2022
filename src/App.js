@@ -10,6 +10,7 @@ import Resume from './containers/Resume'
 import Portfolio from './containers/Portfolio'
 import Contact from './containers/Contact'
 import Navbar from './components/Navbar'
+import Theme from './components/Theme'
 import particlesConfig from './helpers/particlesConfig'
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
       </div>
 
       <div className="App__main-content-wrapper">
+        <Theme />
         <Routes>
           <Route path="/" index element={<Home />} />
           <Route path="/about" index element={<About />} />
