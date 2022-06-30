@@ -2,6 +2,7 @@ import React from 'react'
 import { AiFillProject } from 'react-icons/ai'
 import PageHeaderContent from '../../components/PageHeaderContent'
 import { filterOptions, portfolioData } from './utils'
+import './style.scss'
 
 function Portfolio() {
   return (
