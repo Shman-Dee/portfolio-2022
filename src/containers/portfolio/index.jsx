@@ -7,16 +7,16 @@ import { useState } from 'react'
 
 function Portfolio() {
   const [filterValue, setFilterValue] = useState(1)
+  const [hoveredIndex, setHoveredIndex] = useState(null)
 
   const handleFilter = (id) => {
     setFilterValue(id)
   }
 
-  console.log(filterValue)
-
-  const filteredPortfolioDate = filterValue === 1 ? portfolioData : 
-  
-  portfolioData.filter(item=> item.sectionId === filterValue)
+  const filteredPortfolioDate =
+    filterValue === 1
+      ? portfolioData
+      : portfolioData.filter((item) => item.sectionId === filterValue)
 
   return (
     <section className="portfolio" id="portfolio">
@@ -30,6 +30,7 @@ function Portfolio() {
             <li
               onClick={() => handleFilter(option.id)}
               key={`filter${option.id}`}
+              className = {option.id === filterValue ? 'active' : ''}
             >
               {option.label}
             </li>
@@ -37,11 +38,24 @@ function Portfolio() {
         </ul>
         <div className="portfolio__content__cards">
           {filteredPortfolioDate.map((item, key) => (
-            <div key={key} className="portfolio__content__cards__item">
+            <div
+              onMouseEnter={() => setHoveredIndex(key)}
+              onMouseLeave={() => setHoveredIndex(null)}
+              key={key}
+              className="portfolio__content__cards__item"
+            >
               <div className="portfolio__content__cards__item__img-wrapper">
-                <a>
-                  <img src={item.image} alt="project image" />
+                <a href='google.com'>
+                  <img src={item.image} alt="project example" />
                 </a>
+              </div>
+              <div className="overLay">
+                {hoveredIndex === key && (
+                  <div>
+                    <p>{item.projectName}</p>
+                    <button>Visit</button>
+                  </div>
+                )}
               </div>
             </div>
           ))}
