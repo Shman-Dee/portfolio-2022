@@ -25,7 +25,7 @@
       bottom: -1px;
     }
 
-    &__header-text::before{
+    &__header-text::before {
       left: 0;
     }
 
@@ -33,21 +33,23 @@
       right: 0;
     }
 
-    &__form{
+    &__form {
       margin-top: 30px;
 
-      &__controlsWrapper{
+      &__controlsWrapper {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 40px;
         margin-bottom: 30px;
 
-        div{
+        div {
           position: relative;
 
           // i needed a push, not going to lie. love you dad
 
-          .inputName, .inputEmail, .inputDescription {
+          .inputName,
+          .inputEmail,
+          .inputDescription {
             width: 100%;
             border: 2px solid var(--selected-theme-main-color);
             padding: 15px 10px;
@@ -56,7 +58,29 @@
             z-index: 1;
             background: transparent;
 
-            color: var(--selected-theme-main-color)
+            color: var(--selected-theme-main-color);
+          }
+
+          .namelabel,
+          .emaillabel,
+          .descriptionlabel {
+            position: absolute;
+            font-weight: 500;
+            top: 7px;
+            left: 12px;
+            z-index: 0;
+            color: var(--selected-theme-main-color);
+            font-size: 16px;
+          }
+
+          .inputName:focus, .inputEmail:focus, .inputDescription:focus {
+            outline: none;
+          }
+
+          .inputName:focus + .namelabel,  .inputEmail:focus + .emaillabel, .inputDescription:focus + .descriptionlabel {
+            font-size: 18px;
+            top: -25px;
+            left: 0px;
           }
         }
       }
