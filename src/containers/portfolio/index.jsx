@@ -30,7 +30,7 @@ function Portfolio() {
             <li
               onClick={() => handleFilter(option.id)}
               key={`filter${option.id}`}
-              className = {option.id === filterValue ? 'active' : ''}
+              className={option.id === filterValue ? 'active' : ''}
             >
               {option.label}
             </li>
@@ -45,7 +45,7 @@ function Portfolio() {
               className="portfolio__content__cards__item"
             >
               <div className="portfolio__content__cards__item__img-wrapper">
-                <a href='google.com'>
+                <a href="google.com">
                   <img src={item.image} alt="project example" />
                 </a>
               </div>
@@ -53,8 +53,12 @@ function Portfolio() {
                 {hoveredIndex === key && (
                   <div>
                     <p>{item.projectName}</p>
-                    <button>Visit</button>
-                    <button>Github Repo</button>
+                    <button href={item.projectLink} target="_blank">
+                      Visit
+                    </button>
+                    <button href={item.githubLink} target="_blank">
+                      Github Repo
+                    </button>
                   </div>
                 )}
               </div>
