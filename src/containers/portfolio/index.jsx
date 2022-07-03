@@ -53,12 +53,12 @@ function Portfolio() {
                 {hoveredIndex === key && (
                   <div>
                     <p>{item.projectName}</p>
-                    <button href={item.projectLink} target="_blank">
-                      Visit
-                    </button>
-                    <button href={item.githubLink} target="_blank">
-                      Github Repo
-                    </button>
+                    <a href={item.projectLink}>
+                      <button>Visit</button>
+                    </a>
+                    <a href={item.githubLink}>
+                      <button>Github Repo</button>
+                    </a>
                   </div>
                 )}
               </div>
