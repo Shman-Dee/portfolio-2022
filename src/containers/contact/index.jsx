@@ -39,6 +39,7 @@ function Contact() {
               </label>
             </div>
           </div>
+          <button>Submit</button>
         </div>
       </div>
     </section>

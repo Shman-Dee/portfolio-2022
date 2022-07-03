@@ -54,6 +54,7 @@ function Portfolio() {
                   <div>
                     <p>{item.projectName}</p>
                     <button>Visit</button>
+                    <button>Github Repo</button>
                   </div>
                 )}
               </div>
