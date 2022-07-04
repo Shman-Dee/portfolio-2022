@@ -33,7 +33,7 @@ function Resume() {
                   color: 'var(--selected-theme-main-color',
                   border: '1.5px solid var(--selected-theme-main-color)',
                 }}
-                date="2021 - present"
+                date="2014 - present"
                 iconStyle={{
                   background: '#181818',
                   color: 'var(--selected-theme-main-color)',

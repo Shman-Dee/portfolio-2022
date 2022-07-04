@@ -27,10 +27,12 @@ function Home() {
         <div className="contact-me">
           <div className="contact-me__buttons-wrapper">
             <button>Hire Me</button>
-            <a href="http://google.com" >Download Resume</a>
+            <a href="https://docs.google.com/document/d/13Ll1EoAU-FOsD1BAcwVg6PSMAfgM-fqnf-IBKugc4Z4/edit?usp=sharing">
+              Download Resume
+            </a>
           </div>
           <div className="contact-me__socials-wrapper">
-            <FaLinkedin size={32} />
+            <FaLinkedin size={32}/>
             <FaGithub size={32} />
             <FaTwitter size={32} />
           </div>

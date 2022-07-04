@@ -21,7 +21,7 @@ export const skillsData = [
     data: [
       {
         skillName: 'SQL',
-        percentage: '60',
+        percentage: '70',
       },
       {
         skillName: 'NoSQL',

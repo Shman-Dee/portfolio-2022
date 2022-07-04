@@ -30,30 +30,11 @@ function About() {
           >
             <h3 className="developerContent">Full Stack Developer</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
-              dicta nulla quos vero corrupti facilis qui ab, inventore veniam
-              exercitationem ipsa, assumenda esse? Adipisci ea cupiditate ad cum
-              debitis nihil nobis placeat quidem iusto reiciendis. Quo ut nisi
-              labore. Cupiditate quaerat, ab voluptatem harum ullam
-              exercitationem excepturi nisi eum, rem aliquam in illum ut
-              mollitia porro molestiae quae minus? Perspiciatis quae illum totam
-              soluta sit aliquam atque reprehenderit, quibusdam, voluptas
-              voluptates rem, enim necessitatibus culpa vel. Debitis nisi
-              blanditiis facere optio sint labore nostrum, placeat dignissimos.
-              Nulla dolorum similique omnis tempore ipsum laboriosam minima,
-              vero fuga, ullam sint libero voluptatem, aspernatur repudiandae
-              possimus consectetur? In possimus fuga eaque, harum sed aliquid
-              minima eveniet autem iure incidunt obcaecati nihil est quas qui
-              officiis ipsa nisi quaerat voluptatem? Vitae natus et ipsam
-              inventore sequi excepturi quaerat impedit, eius quod cum ipsum
-              placeat beatae soluta doloremque eum earum laborum labore eaque
-              qui, recusandae tempora. Eos vel, deleniti molestiae debitis culpa
-              ad eveniet dolore corrupti vero illo quo optio explicabo, enim
-              accusantium totam hic similique nulla quisquam. Est eum quos quas
-              excepturi cumque, accusamus magnam voluptatibus fuga
-              necessitatibus ut adipisci blanditiis praesentium consectetur
-              molestias dolorum atque quis consequatur sed iure harum quisquam
-              unde nemo!
+              Full stack web developer with an emphasis in approachability to
+              provide unique perspectives on how end-users interact with
+              websites and software platforms. Earned a certificate in Full
+              Stack Web Development from the University of Denver Coding Boot
+              Camp. Inspirational problem-solver who is animate about developing apps with a focus on mobile-first design and development. Strengths in creativity, teamwork, web3 and building projects from genesis to consumate.
             </p>{' '}
           </Animate>
           <Animate

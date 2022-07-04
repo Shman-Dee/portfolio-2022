@@ -5,16 +5,7 @@ export const data = {
       subTitle: 'Aspen, Colorado',
       description: 'Team Captain'
     },
-    {
-      title: 'Coed Softball',
-      subTitle: 'Aspen, Colorado',
-      description: 'Team Captain'
-    },
-    {
-      title: 'Coed Softball',
-      subTitle: 'Aspen, Colorado',
-      description: 'Team Captain'
-    },
+    
   ],
   education: [
     {
@@ -22,15 +13,6 @@ export const data = {
       subTitle: "Trinity Coding Bootcamp",
       description: "Full Stack Web Development"
     },
-    {
-      title: "Denver University",
-      subTitle: "Trinity Coding Bootcamp",
-      description: "Full Stack Web Development"
-    },
-    {
-      title: "Denver University",
-      subTitle: "Trinity Coding Bootcamp",
-      description: "Full Stack Web Development"
-    },
+    
   ]
 }
