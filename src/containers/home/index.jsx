@@ -2,6 +2,7 @@ import React from 'react'
 import { Animate } from 'react-simple-animate'
 import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa'
 import './style.scss'
+import { Link } from 'react-router-dom'
 
 function Home() {
   return (
@@ -26,13 +27,14 @@ function Home() {
       >
         <div className="contact-me">
           <div className="contact-me__buttons-wrapper">
-            <button>Hire Me</button>
+            <Link to="/contact">Hire Me</Link>
+
             <a href="https://docs.google.com/document/d/13Ll1EoAU-FOsD1BAcwVg6PSMAfgM-fqnf-IBKugc4Z4/edit?usp=sharing">
               Download Resume
             </a>
           </div>
           <div className="contact-me__socials-wrapper">
-            <FaLinkedin size={32}/>
+            <FaLinkedin size={32} />
             <FaGithub size={32} />
             <FaTwitter size={32} />
           </div>
