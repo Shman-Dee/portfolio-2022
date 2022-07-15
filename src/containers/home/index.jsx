@@ -1,6 +1,6 @@
 import React from 'react'
 import { Animate } from 'react-simple-animate'
-import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa'
+import { FaLinkedin, FaGithub } from 'react-icons/fa'
 import './style.scss'
 import { Link } from 'react-router-dom'
 
@@ -9,9 +9,9 @@ function Home() {
     <section className="home" id="home">
       <div className="home__text-wrapper">
         <h1 className="title-text">
-          Hello, I'm Andrew.
+          Andrew McInally
           <br />
-          Utility Specialist
+          Web Development
         </h1>
       </div>
       <Animate
@@ -34,9 +34,22 @@ function Home() {
             </a>
           </div>
           <div className="contact-me__socials-wrapper">
-            <FaLinkedin size={32} />
-            <FaGithub size={32} />
-            <FaTwitter size={32} />
+            <a
+              href="https://www.linkedin.com/in/andrew-mcinally/"
+              target="_blank"
+              rel="noreferrer"
+              className=""
+            >
+              <FaLinkedin size={32} />
+            </a>
+            <a
+              href="https://github.com/Shman-Dee"
+              target="_blank"
+              rel="noreferrer"
+              className=""
+            >
+              <FaGithub size={32} />
+            </a>
           </div>
         </div>
       </Animate>

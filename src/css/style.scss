@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,900;1,100;1,400;1,700&display=swap');
 
 :root {
   --selected-theme-background-color: var(--yellow-theme-background-color);
   --selected-theme-main-color: var(--yellow-theme-main-color);
   --selected-theme-sub-text-color: var(--yellow-theme-sub-text-color);
-  --selected-theme-nav-background-color: var(--yellow-theme-nav-background-color);
+  --selected-theme-nav-background-color: var(
+    --yellow-theme-nav-background-color
+  );
 
   --yellow-theme-background-color: #1d1d1d;
-  --yellow-theme-main-color: #DCCB37;
+  --yellow-theme-main-color: #dccb37;
   --yellow-theme-sub-text-color: #ffffff;
   --yellow-theme-nav-background-color: #181818;
 
@@ -26,7 +29,7 @@
   --blue-theme-sub-text-color: #ffffff;
   --blue-theme-nav-background-color: #181818;
 
-  --font-base: 'Roboto Slab', serif;
+  --font-base: 'Lato', serif;
 }
 
 * {
@@ -34,7 +37,6 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-
 }
 
 html {
@@ -45,6 +47,7 @@ html {
 body {
   background: #323232;
   height: 100%;
+  font-family: var(--font-base);
 }
 
 #root {
