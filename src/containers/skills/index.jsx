@@ -1,6 +1,6 @@
 import React from 'react'
 import { skillsData } from './utils'
-import PageHeaderContent from '../../components/PageHeaderContent'
+import PageHeaderContent from '../../components/pageHeaderContent'
 import { GiSkills } from 'react-icons/gi'
 import { Line } from 'rc-progress'
 import './style.scss'

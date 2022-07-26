@@ -1,6 +1,6 @@
 import React from 'react'
 import { Animate } from 'react-simple-animate'
-import { FaLinkedin, FaGithub,} from 'react-icons/fa'
+import { FaLinkedin, FaGithub} from 'react-icons/fa'
 import './style.scss'
 import { Link } from 'react-router-dom'
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaBlackTie } from 'react-icons/fa'
 import { MdWork } from 'react-icons/md'
-import PageHeaderContent from '../../components/PageHeaderContent'
+import PageHeaderContent from '../../components/pageHeaderContent'
 import {
   VerticalTimeline,
   VerticalTimelineElement,

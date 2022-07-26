@@ -1,5 +1,5 @@
 import React from 'react'
-import PageHeaderContent from '../../components/PageHeaderContent'
+import PageHeaderContent from '../../components/pageHeaderContent'
 import { BsInfoCircleFill } from 'react-icons/bs'
 import { DiApple, DiAndroid } from 'react-icons/di'
 import { FaDev, FaDatabase } from 'react-icons/fa'

@@ -1,5 +1,5 @@
 import React from 'react'
-import PageHeaderContent from '../../components/PageHeaderContent'
+import PageHeaderContent from '../../components/pageHeaderContent'
 import { RiContactsFill } from 'react-icons/ri'
 import './style.scss'
 
