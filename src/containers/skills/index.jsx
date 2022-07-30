@@ -38,7 +38,7 @@ function Skills() {
                     
                     play
                     duration={1}
-                    keyframes={['oacity : 1' , 'opacity : 0']}
+                    keyframes={['opacity : 1' , 'opacity : 0']}
                     iterationCount='1'
                     >
                       <div className="progressbar-wrapper" key={index}>
